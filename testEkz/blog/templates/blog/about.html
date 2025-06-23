@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      {% block title %}
+        О нас
+      {% endblock %}
+    </title>
+  </head>
+
+  <body>
+    <div id="content">
+      {% block content %}
+
+      {% endblock %}
+    </div>
+  </body>
+</html>

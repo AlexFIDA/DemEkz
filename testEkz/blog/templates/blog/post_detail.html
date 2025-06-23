@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<div class="container py-4">
+  <h1>{{ post.title }}</h1>
+  {% if post.image %}
+    <img src="{{ post.image.url }}" class="img-fluid mb-3" alt="{{ post.title }}">
+  {% endif %}
+  <p class="text-muted">{{ post.created_at|date:"d.m.Y H:i" }}</p>
+  <p>{{ post.content }}</p>
+</div>
+{% endblock %}
